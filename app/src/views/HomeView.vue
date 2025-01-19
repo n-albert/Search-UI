@@ -8,7 +8,7 @@ import SearchInput from '@/components/SearchInput.vue';
   <main>
     <header>
       <div class="wrapper">
-        <HomePageHeader msg="Nikita's Search UI" />
+        <HomePageHeader msg="Search UI" />
       </div>
     </header>
     <SearchOptions />
