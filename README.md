@@ -1,14 +1,6 @@
-# Selecting_Page
+# Search UI
 
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
+![image](https://github.com/user-attachments/assets/7daeeb74-df61-4028-8d59-a0e050cf5096)
 
 ## Project Setup
 
@@ -26,4 +18,12 @@ npm run dev
 
 ```sh
 npm run build
+```
+
+### If using Dockerfile + Docker
+
+```sh
+docker build -t vuejs-cookbook/dockerize-vuejs-app .
+
+docker run -it -p 8080:80 --rm --name dockerize-vuejs-app-1 vuejs-cookbook/dockerize-vuejs-app
 ```
