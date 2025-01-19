@@ -29,7 +29,7 @@
     flex: 1;
     flex-flow: column;
     margin: 25px 25px 0px 25px;
-    border: darkolivegreen solid;
+    border: rgb(181, 247, 207);
 }
 
 .result-banner {
@@ -39,12 +39,12 @@
 }
 
 .result-content-default {
-    background-color: olive;
+    background-color: rgb(181, 247, 207);
     height: 110px
 }
 
 .result-content-expanded {
-    background-color: goldenrod;
+    background-color: rgb(181, 247, 207);
     height: 110px
 }
 

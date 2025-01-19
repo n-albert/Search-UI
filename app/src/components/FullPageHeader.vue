@@ -18,7 +18,7 @@
 .full-page-header {
     width: 100%; 
     flex-direction: row;
-    padding-top: 20px;
+    padding-top: 0px;
     padding-bottom: 20px;
     vertical-align: auto;
     border-bottom: double rgb(0, 147, 59);
@@ -29,6 +29,7 @@
     width: 60px;
     height: 60px;
     float: left;
+    margin-right: 25px;
 }
 
 .green {
