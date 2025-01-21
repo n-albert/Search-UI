@@ -39,11 +39,11 @@
     </header>
     <div class="search-options">
         <div>Selected search type: {{ searchSelection }}</div>
-        <input type="radio" v-model="searchSelection" id="standards" value="Standards" />
-        <label for="standards">Standards</label><br />
+        <input type="radio" v-model="searchSelection" id="document-set-one" value="Document Set One" />
+        <label for="document-set-one">Document Set One</label><br />
 
-        <input type="radio" v-model="searchSelection" id="prodcedures" value="Procedures" />
-        <label for="procedures">Procedures</label><br />
+        <input type="radio" v-model="searchSelection" id="document-set-two" value="Document Set Two" />
+        <label for="document-set-two">Document Set Two</label><br />
     </div>
     <div class="search-input">
         <span>Multiline message is:</span>
