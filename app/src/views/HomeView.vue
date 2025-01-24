@@ -10,15 +10,20 @@
           return {
               searchSelection: "",
               textareaInput: "",
-              doesRotate: false
+              rotateClicked: false,
+              rotationDuration: 500
           };
       },
       methods: {
+          rotation() {
+            this.rotateClicked = !this.rotateClicked;
+            setTimeout(() => this.rotateClicked = !this.rotateClicked, this.rotationDuration)
+          },
           submitSearch() {
-              this.doesRotate = true;
-              alert(`Hello!`)
-              router.push('/results')
-          }
+              this.rotateClicked = !this.rotateClicked;
+              setTimeout(() => router.push('/results'), 750)
+
+          },
       }
   };
 </script>
@@ -28,11 +33,12 @@
     <header>
       <div class="wrapper">
         <div class="greetings">
-          <RouterLink to="/">
-            <div :class="{ rotate: doesRotate}"> 
+          
+            <div @click="rotation" :class="{ rotateClicked }"> 
               <img alt="Binoculars from SVGRepo" class="ui-logo" id="uiLogo" src="@/assets/binoculars-svgrepo-com.svg" width="125" height="125" />
             </div>
-          </RouterLink>
+          <!-- <RouterLink to="/">
+          </RouterLink> -->
           <h1 class="green">Search UI</h1>
         </div>
       </div>
@@ -50,7 +56,7 @@
         <p>{{ textareaInput }}</p>
         <textarea v-model="textareaInput" placeholder="add multiple lines"></textarea>
     </div>
-    <button @click="submitSearch" :class="{ rotate: doesRotate}">Search</button>
+    <button @click="submitSearch()">Search</button>
   </main>
 </template>
 
@@ -77,6 +83,15 @@ h3 {
   text-align: center;
 }
 
+.search-options {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.search-options label {
+  padding-left: 10px;
+}
+
 .search-input p {
     white-space: pre-line;
 }
@@ -87,11 +102,11 @@ h3 {
     min-height: 250px;
 }
 
-.rotate {
-  rotate: 180deg;
-  transition: rotate 2s;
+.rotateClicked {
+  transform: rotate(360deg);
+  transition: transform 500ms ease-in-out;
+  
 }
-
 
 @media (min-width: 512px) {
   .greetings h1,
