@@ -2,13 +2,13 @@
     <div class="search-options-container">
         <div>Selected search type: {{ searchSelection }}</div>
         <div class="search-options">    
-            <div class="search-option" :class="{ 'selected': searchSelection === 'Standards' }">
-                <input type="radio" v-model="searchSelection" id="standards" value="Standards" />
-                <label for="standards">Standards</label><br />
+            <div class="search-option" :class="{ 'selected': searchSelection === 'Document Set One' }">
+                <input type="radio" v-model="searchSelection" id="document-set-one" value="Document Set One" />
+                <label for="document-set-one">Document Set One</label><br />
             </div>
-            <div class="search-option" :class="{ 'selected': searchSelection === 'Procedures' }">
-                <input type="radio" v-model="searchSelection" id="procedures" value="Procedures" />
-                <label for="procedures">Procedures</label><br />
+            <div class="search-option" :class="{ 'selected': searchSelection === 'Document Set Two' }">
+                <input type="radio" v-model="searchSelection" id="document-set-two" value="Document Set Two" />
+                <label for="document-set-two">Document Set Two</label><br />
             </div>      
         </div>
     </div>
@@ -28,6 +28,8 @@
 <style>
     .search-options-container {
         min-height: 50px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     .search-options {
         display: flex;

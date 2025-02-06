@@ -1,5 +1,5 @@
 <script setup>
-
+  import SearchOptions from '@/components/SearchOptions.vue';
 </script>
 
 <script>
@@ -43,6 +43,8 @@
         </div>
       </div>
     </header>
+    <SearchOptions></SearchOptions>
+    <!--
     <div class="search-options">
         <div>Selected search type: {{ searchSelection }}</div>
         <input type="radio" v-model="searchSelection" id="document-set-one" value="Document Set One" />
@@ -51,6 +53,8 @@
         <input type="radio" v-model="searchSelection" id="document-set-two" value="Document Set Two" />
         <label for="document-set-two">Document Set Two</label><br />
     </div>
+    -->
+
     <div class="search-input">
         <span>Multiline message is:</span>
         <p>{{ textareaInput }}</p>
