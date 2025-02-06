@@ -20,6 +20,7 @@
   .results-container {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
   }
   @media (min-width: 512px) {
     body {

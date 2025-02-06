@@ -5,7 +5,7 @@
   height: 100%;
   min-width: 512px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 2rem 2rem 2rem;
   font-weight: normal;
 }
 
@@ -14,7 +14,7 @@ a,
   text-decoration: none;
   color: hsla(160, 100%, 37%, 1);
   transition: 0.4s;
-  padding: 3px;
+  padding: 0px;
 }
 
 @media (hover: hover) {
@@ -33,6 +33,6 @@ a,
     display: flex;
     flex-direction: column;
     place-items: center;
-    padding: 3rem 2rem;
+    padding: 1rem 2rem 3rem 2rem;
   }
 }

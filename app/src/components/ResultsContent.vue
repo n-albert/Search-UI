@@ -33,7 +33,8 @@
 <style>
     .results-content {
         flex: 1;
-        height: 500px;
+        flex-wrap: wrap;
+        height: auto;
         border-right: dashed rgb(0, 147, 59);
     }
     .results-content h1 {

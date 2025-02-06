@@ -18,7 +18,7 @@
 
 <style>
     .results-sidebar {
-        height: 500px;
+        height: auto;
         width: 250px;
         border-right: dashed rgb(0, 147, 59);
     }
