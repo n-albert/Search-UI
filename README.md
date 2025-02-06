@@ -1,6 +1,7 @@
 # Search UI
 
-![image](https://github.com/user-attachments/assets/dff40d8d-fbf0-40ac-b319-7d5ecb4dc297)
+![image](https://github.com/user-attachments/assets/f8e7b943-7462-4753-ba55-d639161a20ed)
+
 
 ## To Do Items:
 - Add animation to logo when a "search query" is sent. The animation could be a multi-revolution rotation, or a jostle.
